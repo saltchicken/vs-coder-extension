@@ -17,7 +17,7 @@ import os, json
 import coder_AI
 from dotenv import load_dotenv
 load_dotenv()
-TOKEN = os.getenv('OPENAI_KEY')
+TOKEN = os.getenv('OPENAI_API_KEY')
 result = coder_AI.generate_code('Python', '${code}', TOKEN)
 print(json.dumps(result))
 `.trim().replace(/\n/g, ';');
